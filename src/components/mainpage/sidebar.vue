@@ -126,7 +126,7 @@ const submitNewBoardForm = (form: FormInstance | undefined) => {
     if (valid) {
       axios.defaults.baseURL = "http://localhost:8080";
       axios({
-        url: "/api/v1/fs/board",
+        url: "/api/v1/board",
         method: "post",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
@@ -165,7 +165,7 @@ const checkAuth = (): boolean => {
 const getBoardList = async () => {
   axios.defaults.baseURL = "http://localhost:8080";
   await axios({
-    url: "/api/v1/fs/board/list",
+    url: "/api/v1/board/list",
     method: "get",
     headers: {
       Authorization: "Bearer " + token,
