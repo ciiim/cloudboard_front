@@ -33,7 +33,7 @@ const preChunk = (chunk : any) => {
 
 
 const options = ref({
-  target: "//localhost:8080/api/v1/board/upload",
+  target: "/space/upload",
   testChunks: false,
   chunkSize: CHUNKSIZE,
   headers: {

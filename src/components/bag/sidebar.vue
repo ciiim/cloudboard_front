@@ -165,7 +165,7 @@ const checkAuth = (): boolean => {
 const getBoardList = async () => {
   axios.defaults.baseURL = "http://localhost:8080";
   await axios({
-    url: "/api/v1/board/list",
+    url: "/api/v1/space/list",
     method: "get",
     headers: {
       Authorization: "Bearer " + token,
